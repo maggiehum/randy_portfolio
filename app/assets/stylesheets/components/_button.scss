@@ -1,0 +1,21 @@
+.concepts, .storyboards, .personals {
+  width: 1000px;
+  margin: 17px;
+  padding: 45px;
+  text-transform: none;
+  transform: skew(-25deg);
+  font-size: 25px;
+  background: gray;
+  border: none;
+}
+
+.concepts {
+  background-image: url('test.png');
+  background-size: cover;
+  opacity: 75%;
+}
+
+.concepts:hover, .storyboards:hover, .personals:hover{
+  opacity: 100%;
+  transition: .4s;
+}
