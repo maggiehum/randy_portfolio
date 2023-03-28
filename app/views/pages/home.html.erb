@@ -1,2 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h1 id='name'>Randy Humphries</h1>
+  <h2>Digital Artist</h2>
+
+  <div id='home-buttons'>
+    <%= link_to 'Concept Art', concept_arts_path, class:'concepts btn btn-primary' %>
+    <%= link_to 'Storyboards', storyboards_path, class:'storyboards btn btn-primary' %>
+    <%= link_to 'Personal Art', personals_path, class:'personals btn btn-primary' %>
+  </div>
+</div>
