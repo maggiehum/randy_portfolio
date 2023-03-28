@@ -1,13 +1,25 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: rgba(71, 70, 70, 0.379);
 }
 
 .navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
   border-radius: 50%;
+  margin-left: 17px;
+}
+
+.nav-links {
+  color: rgba(255, 253, 253, 0.69);
+  text-decoration: none;
+  margin: 17px;
+}
+
+.nav-links:hover {
+  color: rgb(255, 253, 253)
 }
