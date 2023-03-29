@@ -1,4 +1,4 @@
-.concepts, .storyboards, .personals {
+.btn {
   border: none;
   opacity: 80%;
   background-color: transparent;
@@ -11,7 +11,7 @@ img, svg {
   margin-bottom: 10px;
 }
 
-.concepts:hover, .storyboards:hover, .personals:hover{
+.btn:hover{
   opacity: 100%;
   transition: .4s;
   background-color: transparent;
