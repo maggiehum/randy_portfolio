@@ -1,22 +1,17 @@
 .concepts, .storyboards, .personals {
-  width: 80%;
-  margin: 17px;
-  padding: 45px;
-  text-transform: none;
-  transform: skew(-25deg);
-  font-size: 25px;
-  background: gray;
   border: none;
+  opacity: 80%;
+  background-color: transparent;
+  background-size: cover;
+  padding-top: 0;
 }
 
-.concepts {
-  background-image: url('test.png');
-  background-size: cover;
-  opacity: 75%;
+img, svg {
+  width: 893px;
 }
 
 .concepts:hover, .storyboards:hover, .personals:hover{
   opacity: 100%;
   transition: .4s;
-  color: rgb(211, 71, 71);
+  background-color: transparent;
 }
