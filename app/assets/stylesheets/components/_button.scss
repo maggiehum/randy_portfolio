@@ -7,10 +7,12 @@
 }
 
 img, svg {
-  width: 893px;
+  max-width: 1010px;
+  margin-bottom: 10px;
 }
 
 .concepts:hover, .storyboards:hover, .personals:hover{
+  background-color: white;
   opacity: 100%;
   transition: .4s;
   background-color: transparent;
