@@ -1,14 +1,27 @@
 // Specific CSS for your home-page
 body {
-  background-image: url('background.png');
+  // background-image: url('BluePrint.jpg');
+  background: url('background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
 #name {
   color: rgba(255, 255, 255, 0.68);
   font-family: 'Allura', cursive;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 0;
   font-size: 77px;
+}
+
+.titles {
+  color: white;
+  margin-right: 10px;
+  font-size: 25px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 300;
 }
 
 #home-buttons {
