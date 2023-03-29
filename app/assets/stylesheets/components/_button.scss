@@ -11,9 +11,10 @@ img, svg {
   margin-bottom: 10px;
 }
 
-.btn:hover{
+.btn:hover {
   opacity: 100%;
   transition: .4s;
   background-color: transparent;
   filter: brightness(150%);
+  scale: 1.01;
 }
