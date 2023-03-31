@@ -1,8 +1,10 @@
 <div class="container mb-5">
   <h1 class='headers'>This is my personal art page</h1>
-  <div class='image_container'>
+  <div class='image_container row'>
     <% @personals.each do |personal| %>
-      <%=  cl_image_tag personal.image.key, class: 'personal_img' %>
+      <div class='img-box column'>
+          <%=  cl_image_tag personal.image.key, class: 'personal_img' %>
+      </div>
     <% end %>
   </div>
 </div>
