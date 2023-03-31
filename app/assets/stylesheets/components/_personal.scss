@@ -1,21 +1,22 @@
-.personal_img {
-  width: 364px;
-}
-
 .img-box {
   height: 264px;
   width: 100%;
   overflow: hidden;
   object-position: center 40%;
+  box-sizing: content-box;
+  float: left;
+  position: relative;
+}
+
+.personal_img {
+  width: 364px;
+  position: absolute;
+  top: 159px; right: -50%; bottom: 0; left: -50%;
+  margin: auto;
 }
 
 .image_container{
   display: grid;
   text-align: center;
   grid-template-columns: repeat(5, 1fr);
-  gap: 0;
-}
-
-*, *::before, *::after {
-  box-sizing: content-box;
 }
