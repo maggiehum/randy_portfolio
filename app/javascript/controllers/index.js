@@ -7,8 +7,5 @@ import { application } from "./application"
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-import ClickableImagesController from "./clickable_images_controller"
-application.register("clickable_images", ClickableImagesController)
-
-import SliderController from "./slider_controller"
-application.register("slider", SliderController)
+import ViewboxController from "./viewbox_controller"
+application.register("viewbox", ViewboxController)

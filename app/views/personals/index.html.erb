@@ -1,20 +1,21 @@
 <div class="container mb-5">
   <h1 class='headers'>This is my personal art page</h1>
-  <div class='image_container' id='app' data-controller="clickable_images">
+  <div class='image_container' id='app'>
     <% @personals.each do |personal| %>
-      <div class='img-box'>
-        <button data-action="click->clickable_images#expandImage"><%= cl_image_tag personal.image.key, class: 'personal_img' %></button>
-      </div>
-
-      <div class="modal" data-controller="slider" data-clickable_images-target="modal">
+      <div class='img-box' data-controller="viewbox">
+        <div class='preview-container'>
+          <button type="button" data-action="click->viewbox#open">
+            <%= cl_image_tag personal.image.key, class: 'personal_img' %>
+          </button>
+        </div>
+        <div class="modal" data-viewbox-target="modal">
           <div class="modal-dialog">
-              <div class="modal-content">
-                <% @personals.each do |personal| %>
-                  <%= cl_image_tag personal.image.key %>
-                <% end %>
-                <button data-action="click->slider#close">Close</button>
-              </div>
+            <div class="modal-content">
+              <%= cl_image_tag personal.image.key %>
+              <button class='close' data-action="click->viewbox#close">Close</button>
+            </div>
           </div>
+        </div>
       </div>
     <% end %>
   </div>
