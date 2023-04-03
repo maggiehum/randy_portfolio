@@ -8,7 +8,6 @@
 
 img, svg {
   max-width: 1057px;
-  margin-bottom: 10px;
 }
 
 .btn:hover {
@@ -17,4 +16,14 @@ img, svg {
   background-color: transparent;
   filter: brightness(150%);
   scale: 1.01;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: rgba(119, 119, 119, 0.752);
 }
