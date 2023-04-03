@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class='headers'>This is the concept art page</h1>
+  <div class='image_container' id='app'>
+    <% @concepts.each do |concept| %>
+      <div class='img-box' data-controller="viewbox">
+        <div class='preview-container'>
+          <button type="button" data-action="click->viewbox#open">
+            <%= cl_image_tag concept.image.key, class: 'concept_img' %>
+          </button>
+        </div>
+        <div class="modal concepts-modal" data-viewbox-target="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <%= cl_image_tag concept.image.key %>
+              <button class='close' data-action="click->viewbox#close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
