@@ -22,3 +22,9 @@
   margin-right: 13px;
   margin-left: -7px;
 }
+
+.personal_img:hover{
+  filter: brightness(117%);
+  cursor: pointer;
+  transition: .4s;
+}
