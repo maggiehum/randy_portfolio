@@ -19,12 +19,43 @@
   display: grid;
   text-align: center;
   grid-template-columns: repeat(5, 1fr);
-  margin-right: 13px;
-  margin-left: -7px;
+  margin: auto;
 }
 
 .personal_img:hover{
   filter: brightness(117%);
   cursor: pointer;
   transition: .4s;
+}
+
+// INDIVIDUAL POSITION
+
+.personal-img-3{
+  top: 193px;
+  left: -130px;
+}
+
+.personal-img-5{
+  top: -73px;
+  left: -113px;
+}
+
+.personal-img-9{
+  top: 11px;
+  left: -76px;
+}
+
+.personal-img-10 {
+  top: 34px;
+  left: -174px;
+}
+
+.personal-img-12 {
+  top: 34px;
+  left: -112px;
+}
+
+.personal-img-25 {
+  top: 34px;
+  left: -112px;
 }

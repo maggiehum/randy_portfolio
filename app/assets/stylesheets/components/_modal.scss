@@ -1,0 +1,38 @@
+// CONCEPT MODAL
+
+.concept-modal{
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  max-width: 750px;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.concept-modal-dialog {
+  max-width: 1059px;
+}
+
+@media (min-width: 576px)
+{.modal-dialog {
+    /* max-width: var(--bs-modal-width); */
+    margin-right: auto;
+    margin-left: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+}}
+
+// STORYBOARD
+
+.storyboard-img {
+  position: absolute;
+  top: 88px; right: -29%; bottom: 0; left: -49%;
+  margin: auto;
+}
