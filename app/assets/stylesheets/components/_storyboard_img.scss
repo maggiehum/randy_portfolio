@@ -8,3 +8,9 @@
   bottom: 108px;
   left: -95%;
 }
+
+.storyboard-img:hover{
+  filter: brightness(117%);
+  cursor: pointer;
+  transition: .4s;
+}
