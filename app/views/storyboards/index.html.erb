@@ -1,1 +1,22 @@
-<h1 class='headers'>This is the storyboard page</h1>
+<div class="container">
+  <h1 class='headers'>This is the storyboard page</h1>
+  <div class='image_container' id='app'>
+    <% @storyboards.each_with_index do |story, index| %>
+      <div class='img-box' data-controller="viewbox">
+        <div class='preview-container'>
+          <button class="storyboard-btn" type="button" data-action="click->viewbox#open">
+            <%= cl_image_tag story.image.key, class: "storyboard-img storyboard-#{index + 1}"  %>
+          </button>
+        </div>
+        <div class="modal" data-viewbox-target="modal">
+          <div class="modal-dialog storyboard-modal-dialog">
+            <div class="modal-content storyboard-modal">
+              <%= cl_image_tag story.image.key %>
+              <button class='close' data-action="click->viewbox#close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
