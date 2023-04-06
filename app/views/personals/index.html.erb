@@ -4,7 +4,7 @@
     <% @personals.each_with_index do |personal, index| %>
       <div class='img-box' data-controller="viewbox">
         <div class='preview-container'>
-          <button type="button" data-action="click->viewbox#open">
+          <button class="personal-btn" type="button" data-action="click->viewbox#open">
             <%= cl_image_tag personal.image.key, class: "personal_img personal-img-#{index + 1} " %>
           </button>
         </div>

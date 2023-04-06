@@ -22,10 +22,14 @@
   margin: auto;
 }
 
-.personal_img:hover{
-  filter: brightness(117%);
-  cursor: pointer;
-  transition: .4s;
+.personal_img:hover, .storyboard-img:hover, .concept_img:hover{
+  // filter: brightness(117%);
+  // cursor: pointer;
+  // transition: .4s;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s ease;
 }
 
 // INDIVIDUAL POSITION
