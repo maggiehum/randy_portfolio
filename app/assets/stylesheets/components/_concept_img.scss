@@ -5,6 +5,13 @@
   margin: auto;
 }
 
+.concept_img:hover{
+  filter: brightness(117%);
+  cursor: pointer;
+  transition: .4s;
+}
+
+
 .preview-container {
   height:0px;
 }
