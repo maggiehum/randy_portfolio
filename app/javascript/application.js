@@ -2,3 +2,5 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
+require ('./app.js')
+require('./typing.js')
