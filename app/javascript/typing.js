@@ -1,15 +1,8 @@
-async function typeSentence(sentence, eleRef, delay = 100) {
-  const letters = sentence.split("Digital Art By");
-  let i = 0;
-  while(i < letters.length) {
-    await waitForMs(delay);
-    $(eleRef).append(letters[i]);
-    i++
-  }
-  return;
-}
+console.log('This is typing')
 
+import Typed from 'typed.js';
 
-function waitForMs(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
+const typed = new Typed('#sentence', {
+  strings: ['Digital Art By'],
+  typeSpeed: 50,
+});

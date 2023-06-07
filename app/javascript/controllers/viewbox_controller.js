@@ -1,5 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
-import { useClickOutside } from 'stimulus-use/use_click_outside'
+// import { useClickOutside } from 'stimulus-use/use_click_outside'
 
 
 export default class extends Controller {
