@@ -2,13 +2,12 @@
   <h2 class='headers'>Digital Art By</h2>
   <h1 id='name'>Randy Humphries</h1>
 
-  <%# <div id='home-buttons'> %>
-    <div id='home-buttons'>
-      <div class='titles mt-3'>Concepts</div>
+  <div id='home-buttons'>
+    <div class='titles mt-3 hidden'>Concepts</div>
       <%= link_to image_tag('button_concepts.png'),  concept_arts_path, class:'btn' %>
-    <div class='titles mt-3'>Storyboards</div>
-    <%= link_to image_tag('button_storyboards.png'),  storyboards_path, class:'btn' %>
-    <div class='titles mt-3'>Personal</div>
-    <%= link_to image_tag('button_personal.png'),  personals_path, class:'btn' %>
+    <div class='titles mt-3 hidden'>Storyboards</div>
+      <%= link_to image_tag('button_storyboards.png'),  storyboards_path, class:'btn' %>
+    <div class='titles mt-3 hidden'>Personal</div>
+      <%= link_to image_tag('button_personal.png'),  personals_path, class:'btn' %>
   </div>
 </div>
