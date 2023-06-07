@@ -1,4 +1,5 @@
 console.log('Hello');
+// console.log('This is typing');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

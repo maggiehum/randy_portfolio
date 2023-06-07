@@ -2,5 +2,12 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
+
+require ('jquery')
 require ('./app.js')
-require('./typing.js')
+require ('./typing')
+
+// = require ('jquery')
+// = require ('jquery_ujs')
+// = require ('turbolinks')
+// = require_tree ('.')
