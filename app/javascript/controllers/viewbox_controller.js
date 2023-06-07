@@ -27,13 +27,13 @@ export default class extends Controller {
   }
 
 
-  // clickOutside(event) {
-  //   const isInsideImage = event.target.closest('.modal');
+  clickOutside(event) {
+    const isInsideImage = event.target.closest('.modal');
 
-  //   if (isInsideImage) {
-  //     this.close();
-  //   };
-  // }
+    if (isInsideImage) {
+      this.close();
+    };
+  }
 }
 
 
