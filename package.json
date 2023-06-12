@@ -11,6 +11,7 @@
     "stimulus": "^3.2.1",
     "stimulus-use": "^0.52.0",
     "typed.js": "^2.0.16",
+    "use-click-outside": "^2.0.0",
     "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1"
   },

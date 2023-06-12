@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
+import { useClickOutside } from 'stimulus-use'
 // import { useClickOutside } from 'stimulus-use/use_click_outside'
 
 
@@ -6,6 +7,7 @@ export default class extends Controller {
   static targets = ['modal'];
 
   connect() {
+    console.log('connected')
     useClickOutside(this)
     this.modalTarget.addEventListener('clickOutside', this.clickOutside.bind(this))
   }
