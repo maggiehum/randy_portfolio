@@ -2,13 +2,13 @@
   <h1 class='headers'>This is my personal art page</h1>
   <div class='image_container' id='app'>
     <% @personals.each_with_index do |personal, index| %>
-      <div class='img-box' data-controller="viewbox" data-action="click->viewbox#clickOutside">
+      <div class='img-box' data-controller="viewbox">
         <div class='preview-container'>
-          <button class="personal-btn" type="button" data-action="click->viewbox#open">
+          <button class="personal-btn border-0 bg-transparent" type="button" data-action="click->viewbox#open">
             <%= cl_image_tag personal.image.key, class: "personal_img personal-img-#{index + 1} " %>
           </button>
         </div>
-        <div class="modal" data-viewbox-target="modal">
+        <div class="modal" data-viewbox-target="modal" data-action="click->viewbox#clickOutside">
           <div class="modal-dialog">
             <div class="modal-content">
               <%= cl_image_tag personal.image.key %>
